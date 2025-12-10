@@ -14,6 +14,7 @@ for Web, Mobile and IOT, including an Administrative UI, SDKs and a CLI tool to 
 * [Getting started](#getting-started)
 * [Website](https://apiup.ai)
 * [Full documentation](https://docs.apiup.ai)
+* [Demonstration](#demonstration)
 
 
 Features
@@ -33,6 +34,7 @@ Features
 - **Multi-Version**: designed for a smooth `local` ➔ `dev` ➔ `alpha` ➔ `release` deployment workflow;
 - **Automated**: CI and CD ready;
 - **Focused**: No platform overhead, the API UP cloud system give you a professional infra with zero configuration;
+- **Usability**: Administrative UI with the main developers and operations requirements included;
 
 
 Benchmarks
@@ -120,3 +122,10 @@ apiup db_clean  # Drop the dev database, for a fresh start
 apiup python  # Start the Python shell
 ```
 
+
+Demonstration
+-------------------------------------------------
+
+Click in the image to watch the introduction video showing the API as a Service layer over the API UP Web framework.
+
+[![Watch the video](https://img.youtube.com/vi/QHGjzHq9cuU/maxresdefault.jpg)](https://youtu.be/QHGjzHq9cuU)
