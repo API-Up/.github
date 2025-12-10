@@ -65,9 +65,11 @@ Normalized benchmarks, ignoring network latency but including a small I/O overhe
 Installation
 -------------------------------------------------
 
-Requirements:
+0. Requirements:
 - [Docker 28.2.2+](https://www.docker.com/products/docker-desktop/)
 - [Python 3.14+](https://www.python.org/downloads/)
+
+1. Download the API UP CLI:
 
 on Linux
 ```shell
@@ -83,6 +85,10 @@ on Windows 10+
 ```shell
 curl -L -o apiup https://github.com/api-up/apiup-cli/releases/download/latest/apiup-windows-x64-latest.exe
 ```
+
+2. Clone the Project Template: https://github.com/API-Up/api-template
+
+3. Start the development with the commands described in the next section.
 
 
 Getting started
