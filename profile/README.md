@@ -42,18 +42,18 @@ Benchmarks
 
 Normalized benchmarks, ignoring network latency but including a small I/O overhead to simulate database/cache access.
 
-| TS                      | Requests%|   RPS % |   RPM % |Average %|   p50 % |   p90 % |   p95 % |   p99 % |
-|-------------------------|----------|---------|---------|---------|---------|---------|---------|---------|
-| **`python API UP`**     |   7579   |   247   | 14820   |  411.6ms| 430.1ms | 641.6ms | 682.4ms | 729.5ms |
-| `python asgi uvicorn`   |    100.1 |    98   |    98   |   128.4 |   104.1 |   172.8 |   177.4 |   182.7 |
-| `python django gunicorn`|     17.7 |    16.2 |    16.2 |   763.6 |   782.6 |   539   |   509.5 |   478.1 |
-| `python fastapi uvicorn`|     97.6 |    96   |    96   |   120.3 |   103.6 |   155.2 |   160.1 |   162.7 |
-| `python flask gunicorn` |     17.6 |    16.2 |    16.2 |   755   |   775.3 |   532.2 |   501.5 |   470.3 |
-| `python wsgi gunicorn`  |     18.1 |    16.6 |    16.6 |   747.5 |   770.3 |   522.8 |   492.5 |   461.9 |
-| `go gin`                |    104.3 |   103.2 |   103.2 |    98.1 |    87.4 |   120.9 |   125.2 |   129   |
-| `javascript nestjs`     |    99.1  |    99.3 |    99.3 |   128   |   110.7 |   169.6 |   175.1 |   178.6 |
-| `ruby rails`            |     65.3 |    63.2 |    63.2 |   355.6 |   362.1 |   255.5 |   246.1 |   245.6 |
-| `rust actix`            |    101.3 |    99.2 |    99.2 |   119.1 |   100.6 |   155.1 |   161.8 |   166.1 |
+| TS                      | Requests%                          |   RPS % |   RPM % |Average %|   p50 % |   p90 % |   p95 % |   p99 % |
+|-------------------------|------------------------------------|---------|---------|---------|---------|---------|---------|---------|
+| **`python API UP`**     |   `7579`                           |  `247`  | `14820` |`411.6ms`|`430.1ms`|`641.6ms`|`682.4ms`|`729.5ms`|
+| `python asgi uvicorn`   |  :small_red_triangle_down:   99.9  |    98   |    98   |   128.4 |   104.1 |   172.8 |   177.4 |   182.7 |
+| `python django gunicorn`|  :small_red_triangle_down:   17.7  |    16.2 |    16.2 |   763.6 |   782.6 |   539   |   509.5 |   478.1 |
+| `python fastapi uvicorn`|  :small_red_triangle_down:   97.6  |    96   |    96   |   120.3 |   103.6 |   155.2 |   160.1 |   162.7 |
+| `python flask gunicorn` |  :small_red_triangle_down:   17.6  |    16.2 |    16.2 |   755   |   775.3 |   532.2 |   501.5 |   470.3 |
+| `python wsgi gunicorn`  |  :small_red_triangle_down:   18.1  |    16.6 |    16.6 |   747.5 |   770.3 |   522.8 |   492.5 |   461.9 |
+| `go gin`                |  :green_circle:             104.3  |   103.2 |   103.2 |    98.1 |    87.4 |   120.9 |   125.2 |   129   |
+| `javascript nestjs`     |  :small_red_triangle_down:   99.1  |    99.3 |    99.3 |   128   |   110.7 |   169.6 |   175.1 |   178.6 |
+| `ruby rails`            |  :small_red_triangle_down:   65.3  |    63.2 |    63.2 |   355.6 |   362.1 |   255.5 |   246.1 |   245.6 |
+| `rust actix`            |  :green_circle:             101.3  |    99.2 |    99.2 |   119.1 |   100.6 |   155.1 |   161.8 |   166.1 |
 
 - **RPS**: requests per second;
 - **RPM**: requests per minute;
