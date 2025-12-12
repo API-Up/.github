@@ -71,6 +71,9 @@ Installation
 
 1. Download the API UP CLI:
 
+Python frameworks are usually installed with pip, but API UP ships a fully-configured development environment.
+Instead of installing packages, you just download the Dev Docker image using the API UP CLI and everything is ready to use.
+
 on Linux
 ```shell
 curl -L -o apiup https://github.com/api-up/apiup-cli/releases/download/latest/apiup-linux-x64-latest ; chmod +x apiup
@@ -86,7 +89,14 @@ on Windows 10+
 curl -L -o apiup https://github.com/api-up/apiup-cli/releases/download/latest/apiup-windows-x64-latest.exe
 ```
 
-2. Clone the Project Template: https://github.com/API-Up/api-template
+2. Bootstrap your project:
+
+```shell
+apiup bootstrap
+```
+
+Reference: https://github.com/API-Up/apiup-template
+
 
 3. Start the development with the commands described in the next section.
 
@@ -94,7 +104,6 @@ curl -L -o apiup https://github.com/api-up/apiup-cli/releases/download/latest/ap
 Getting started
 -------------------------------------------------
 
-Project Template: https://github.com/API-Up/api-template
 
 ```shell
 apiup check  # Check if the Env has the requirements to run the API
@@ -110,6 +119,7 @@ apiup stop  # Stop the resources
 Development commands:
 
 ```shell
+apiup create_subapp  # To create Sub Apps with a default skeleton and template
 apiup models  # Generate models from YAML schemas
 apiup format  # Format the source code
 apiup lint  # Format and Lint the source code
